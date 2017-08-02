@@ -24,6 +24,15 @@ class Users extends AbstractMigration
                 'limit' => 255,
                 'null' => false,
             ])
+            ->addColumn('email', 'string', [
+                'default' => null,
+                'limit' => 255,
+                'null' => false,
+            ])
+            ->addColumn('description', 'text', [
+                'default' => null,
+                'null' => false,
+            ])
 
             ->create();
 
